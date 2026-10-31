@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+        font-family: "Dongle-light";
+        src: url("Dongle/Dongl-light.ttf");
+}
+
+@font-face {
+        font-family: "Dongle-regular";
+        src: url("Dongle/Dongle-regular.ttf");
+}
+@font-face {
+        font-family: "Dongle-bold";
+        src: url("Dongle/Dongle-bold.ttf");
+}
+header{
+    display: flex;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+.logo img{
+    max-width: 20%; 
+}
+.nav-menu ul{
+    display: flex;
+}
+.nav-menu li{
+    list-style: none;
+    margin-right: 20px ;
+}
+.nav-menu li :last-child{
+     text-decoration: none;
+     font-family: "Dongl-bold";
+     font-size: 1.6;
+     transition: all ease 0.8;
+}
+.nav-menu a:hover{
+    color: #ff7f50;
+}
+.hero{
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+.hero-image img {
+    width: 100%;
+    height: 500px,600px;   
+    object-fit: cover;
+    border-radius: 10px;
+}
+.hero-image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100;
+    height: 100;
+    object-fit: cover;
+    z-index: -1;
+}
+.hero-content{
+    position: relative;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+.hero-content h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;    
+}
+.hero-content p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.hero-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fffb;
+  background-color: #ff7f50;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem; 
+  transform: all ease 0.3;
+}
+.hero-button:hover{
+    background-color: #333;
+}
+.destinations {
+    padding: 40px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px 80px;
+    text-align: center;
+}
+
+.destinations h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+.destinations-item img {
+    width: 100%;
+    height: 300px;        
+    object-fit: cover;    
+    border-radius: 10px;
+}
+.destinations-item h3 {
+    margin-top: 12px;
+    font-size: 1.3rem;
+}
+
+.destinations-item p {
+    margin-top: 8px;
+    line-height: 1.5;
+}
+.destinations-item h3{
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.About {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.About h3 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.About p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.team-title {
+    margin-top: 40px;
+    font-size: 2rem;
+    text-align: left;
+    width: 80%;
+    margin-left: 10%;
+}
+.team-members {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.team-member {
+    width: 260px;
+    text-align: center;
+}
+.team-member img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.team-member h4 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+.team-member p {
+    font-size: 1rem;
+    color: #444;
+}
+.contact{
+    padding: 80px;
+    text-align: center;
+    background-color: #f7f7f7
+}
+.contact h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
+.contact-info p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+.contact-info ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-info li{
+    margin: 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    display: flex;
+    align-items: center; 
+}
+.contact-infoli a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
